@@ -1,0 +1,118 @@
+CREATE TABLE table1(
+    id serial  primary key ,
+    name VARCHAR(150) NOT NULL ,
+    lastName VARCHAR (150) NOt NULL ,
+    age int  NOT NULL
+);
+INSERT INTO table1(name, lastName, age)
+VALUES ('Meder','Tynychbekov',22);
+
+ SELECT * from table1;
+
+CREATE TABLE table2
+(
+    id       SERIAL PRIMARY KEY,
+    name     VARCHAR(150) NOT NULL,
+    lastName VARCHAR(150) NOT NULL,
+    address  VARCHAR(300) NOT NULL
+);
+
+INSERT INTO table2(name, lastName, address)
+VALUES ('Ermek', 'Koboshov','Yssyk-Kol');
+
+SELECT * FROM table2;
+
+CREATE TABLE table3(
+    id SERIAL NOT NULL ,
+    name VARCHAR(150) NOT NULL ,
+    lastName VARCHAR(150) NOT NULL ,
+    email VARCHAR(150) NOT NULL
+);
+
+INSERT INTO table3(name, lastName, email)
+VALUES ('Kubat', 'Ashymyhanov', 'kubat05@gmail.com');
+
+SELECT * FROM table3;
+
+CREATE TABLE table4(
+    id SERIAL NOT NULL ,
+    name VARCHAR(200) NOT NULL,
+    lastName VARCHAR(200) NOT NULL ,
+    favoriteSport VARCHAR(50)
+);
+
+INSERT INTO table4(name, lastName, favoriteSport)
+VALUES ('Nurullo','Salimov','Football');
+
+SELECT * FROM table4;
+
+create table person (
+                        id INT,
+                        first_name VARCHAR(50),
+                        last_name VARCHAR(50),
+                        email VARCHAR(50),
+                        gender VARCHAR(50)
+);
+insert into person (id, first_name, last_name, email, gender) values (1, 'Margot', 'Bodechon', 'mbodechon0@stumbleupon.com', 'Male');
+insert into person (id, first_name, last_name, email, gender) values (2, 'Cara', 'Curtain', 'ccurtain1@foxnews.com', 'Female');
+insert into person (id, first_name, last_name, email, gender) values (3, 'Blanch', 'Ucceli', 'bucceli2@w3.org', 'Genderqueer');
+
+SELECT * FROM person;
+
+create table country (
+                         id INT,
+                         nameOfCountry VARCHAR(50),
+                         money VARCHAR(50),
+                         countryCode VARCHAR(50)
+);
+insert into country (id, nameOfCountry, money, countryCode) values (1, 'Indonesia', '$9.49', 'ID');
+insert into country (id, nameOfCountry, money, countryCode) values (2, 'Thailand', '$6.02', 'TH');
+insert into country (id, nameOfCountry, money, countryCode) values (3, 'Indonesia', '$0.74', 'ID');
+
+select * from country;
+
+create table car (
+                     id INT,
+                     nameOfCar VARCHAR(50),
+                     year VARCHAR(50),
+                     model VARCHAR(50)
+);
+insert into car (id, nameOfCar, year, model) values (1, 'Chevrolet', 2001, 'Prizm');
+insert into car (id, nameOfCar, year, model) values (2, 'Mitsubishi', 2008, 'Eclipse');
+insert into car (id, nameOfCar, year, model) values (3, 'Mazda', 2005, 'B-Series');
+
+SELECT * FROM car;
+
+create table Movie (
+                       id INT,
+                       nameOfMovie VARCHAR(150),
+                       genres VARCHAR(50)
+);
+insert into Movie (id, nameOfMovie, genres) values (1, 'Heimat', 'Drama');
+insert into Movie (id, nameOfMovie, genres) values (2, 'Billy Jack Goes to Washington', 'Drama');
+insert into Movie (id, nameOfMovie, genres) values (3, 'Self-Made Hero, A (Un héros très discret)', 'Comedy|Drama');
+
+select * from Movie;
+
+create table animal (
+                        id INT,
+                        nameOfAnimal VARCHAR(50),
+                        scientific VARCHAR(50)
+);
+insert into animal (id, nameOfAnimal, scientific) values (1, 'Golden-mantled ground squirrel', 'Spermophilus lateralis');
+insert into animal (id, nameOfAnimal, scientific) values (2, 'Snake, western patch-nosed', 'Salvadora hexalepis');
+insert into animal (id, nameOfAnimal, scientific) values (3, 'Long-finned pilot whale', 'Globicephala melas');
+
+
+SELECT * FROM animal;
+
+create table creditCard (
+                            id INT,
+                            nameOfCreditCard VARCHAR(50),
+                            type VARCHAR(50)
+);
+insert into creditCard (id, nameOfCreditCard, type) values (1, '4936469904956594327', 'switch');
+insert into creditCard (id, nameOfCreditCard, type) values (2, '3545317599112251', 'jcb');
+insert into creditCard (id, nameOfCreditCard, type) values (3, '3572110879453560', 'jcb');
+
+SELECT * FROM creditCard;
